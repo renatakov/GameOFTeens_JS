@@ -1,0 +1,108 @@
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerNav button {
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    width: 70px;
+}
+
+.logoText {
+    font-family: Lexend;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #1B1C57;
+}
+
+.navigation button {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.signUp button {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.buttonNav{
+    width: 100px;
+    height: 43px;
+    padding: 10px 5px;
+    background: #D1FAE5;
+    border-radius: 32px;
+    border: none;
+}
+
+.textMenuNav {
+    font-size: 16px;
+    text-decoration: none;
+    color: #047857;
+}
+
+.span {
+    display: none;
+    height: 2px;
+    width: 30px;
+    background: #047857;
+    position: absolute;
+    top: calc(50% - 1px);
+}
+
+.span::before {
+    content: '';
+    display: none;
+    height: 2px;
+    width: 30px;
+    background: #047857;
+    position: absolute;
+    top: -8px;
+}
+
+.span::before{
+    content: '';
+    display: none;
+    height: 2px;
+    width: 30px;
+    background: #047857;
+    position: absolute;
+    top: 8px;
+}
+
+/* laptop */
+
+/* tablet */
+
+/* phone */
+@media (max-width: 769px) {
+    .headerNav {
+        display: none;
+    }
+
+    .span{
+        display: block;
+    }
+
+    .span::before {
+        display: block;
+    }
+}

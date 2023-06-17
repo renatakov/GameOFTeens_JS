@@ -11,12 +11,10 @@ import newsItem2 from "./images/news/Instagram-1080x1080-1.png"
 import newsItem3 from "./images/news/103910105-machine-learning-artificial-neural-network-ai-icon.webp"
 import newsItem4 from "./images/news/cropped-data-innovation-summit-2023.png"
 import newsItem5 from "./images/news/unnamed.png"
-import { MyContext } from "./Components/Sliders/Slider"
-import { MyContext1 } from './Components/News/News';
 import News from "./Components/News/News"
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { createContext } from 'react';
+import Header from './Components/Header/Header'
 
 
 const initialState = {
@@ -99,16 +97,24 @@ const initialState = {
       img: newsItem5
     },
   ]
+  
 }
 
 const App = () => {
   return (
     <>
       {/* <MyContext.Provider value={initialState}> */}
+      {/* </MyContext.Provider> */}
+
+      <Router>
+         <Header/> 
           <Hero />
           <Slider state={initialState.startups} />
           <News state={initialState.news}/>
-      {/* </MyContext.Provider> */}
+        <Routes> 
+        
+        </Routes> 
+      </Router>
     </>
   );
 };
