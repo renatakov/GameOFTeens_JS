@@ -54,10 +54,220 @@
 
 .card p {
     font-size: 24px;
-    margin-bottom: 8px;
 }
 
 .card .text {
+    font-size: 17px;
+    color: #3C4563;
+}
+
+.card {
+    width: 340px;
+    height: 100%;
+    margin: 20px;
+}
+
+.topImg {
+    width: 340px;
+    height: 382px;
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.imgHover {
+    position: relative;
+}
+
+.imgHover::before {
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 97%;
+    position: absolute;
+    border-radius: 24px;
+    background: #0000009d;
+    transition: opacity .3s ease-in-out;
+}
+
+.imgHover .hover_text {  
+    border: 1px solid #10B981;
+    background: transparent;
+    background-image: none; 
+    border-radius: 15px;
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    bottom: 5%;
+    opacity: 0;
+    left: 5%;
+}
+
+.imgHover .hover_text:hover {
+    transition: .4s ease-in-out;
+    background: #10B981;
+    color: #fff;
+}
+
+.imgHover:hover::before,
+.imgHover:hover .hover_text {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.text {
     font-size: 20px;
     color: #3C4563;
 }
+
+.name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.city {
+    margin: 0;
+    font-size: 14px;
+}
+
+.acc_img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 280px;
+    }
+
+    .topImg {
+        width: 280px;
+        height: 280px;
+    }
+
+    .imgHover::before {
+        height: 96%;
+    }
+}
+
+@media (max-width: 836px) {
+    .card {
+        width: 200px;
+        margin: 10px;
+    }
+
+    .top_h2 {
+        font-size: 20px;
+    }
+
+    .topImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .imgHover::before {
+        height: 95%;
+    }
+}
+
+@media (max-width: 769px) {
+    .card {
+        width: 240px;
+        margin: 10px;
+    }
+
+    .topImg {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+@media (max-width: 724px) {
+    .card {
+        width: 200px;
+        margin: 10px;
+    }
+
+    .topImg {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 625px) {
+    .card {
+        width: 180px;
+        margin: 10px;
+    }
+
+    .topImg {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 170px;
+        margin: 10px;
+    }
+
+    .topImg {
+        width: 170px;
+        height: 170px;
+    }
+
+    .title, .text {
+        margin: 0;
+    }
+
+    .acc_img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .name {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .city {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .imgHover::before {
+        height: 94%;
+    }
+}
+
+@media (max-width: 426px) {
+    .card {
+        width: 230px;
+        margin: 10px;
+    }
+
+    .topImg {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .imgHover::before {
+        height: 95%;
+    }
+}
+

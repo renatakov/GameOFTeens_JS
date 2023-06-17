@@ -1,0 +1,20 @@
+  .news__title{
+    display: flex;
+    padding: 0.3rem;
+  }
+  
+  .news__title > hr {
+    width: 32px;
+    height: 2.5px;
+    border: none;
+    margin: 5px;
+    background: #ffa50b;
+    align-self: center;
+}
+
+.news__title > h2 {
+    color: #F59E0B;
+    font-weight: 500;
+    font-size: 32px;
+}
+

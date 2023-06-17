@@ -5,12 +5,8 @@ const Hero = () => {
     return (
         <section className={s.hero} id={s.hero}>
             <div className={s.title} id={s.title2}>
-                <h1 className={s.h1}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                <p className={s.text}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus officia hic obcaecati veniam similique? Rerum.</p>
-                <form action="" className={s.form}>
-                    <input className={s.input} type="text" placeholder='lorem lklk lklk'/>
-                    <button className={s.button}>Lorem</button>
-                </form>
+                <h1 className={s.h1}>GoITeens Lab - лабораторія стартапів розроблених підлітками🚀</h1>
+                <p className={s.text}>Україна - країна креативних людей, новітніх технологій і стартапів.  На цій платформі ви зможете розміщати свої стартапи і шукати інвесторів для фінансування і реалізації своєї ідеї!!!</p>
             </div>
             <div className={s.img} id={s.img}>
                 <img src={heroImg} className={s.heroImg} alt="" />

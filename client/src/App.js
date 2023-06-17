@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from './Components/Hero/Hero'
 import Slider from './Components/Sliders/Slider'
 import startup1 from "./images/startups/Green-Box-800x800.jpg"
@@ -11,8 +12,12 @@ import newsItem3 from "./images/news/103910105-machine-learning-artificial-neura
 import newsItem4 from "./images/news/cropped-data-innovation-summit-2023.png"
 import newsItem5 from "./images/news/unnamed.png"
 import { MyContext } from "./Components/Sliders/Slider"
-import  Provider  from "react-redux";
+import { MyContext1 } from './Components/News/News';
+import News from "./Components/News/News"
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { createContext } from 'react';
+
 
 const initialState = {
   startups:[
@@ -96,15 +101,17 @@ const initialState = {
   ]
 }
 
-const App = () =>{
-  return(
+const App = () => {
+  return (
     <>
-    <MyContext.Provider value={initialState}>
-      <Hero/>
-      <Slider/>
-    </MyContext.Provider>
+      {/* <MyContext.Provider value={initialState}> */}
+          <Hero />
+          <Slider state={initialState.startups} />
+          <News state={initialState.news}/>
+      {/* </MyContext.Provider> */}
     </>
-  )
-}
+  );
+};
+
 
 export default App;

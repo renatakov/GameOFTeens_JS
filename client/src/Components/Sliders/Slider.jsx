@@ -4,13 +4,13 @@ import cardImg1 from '../../images/slider-hero-section/cardImg1.jpg';
 import cardImg2 from '../../images/slider-hero-section/cardImg2.jpg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { createContext } from "react";
 import StartupItem from "../Startups/StartupItem";
 const MyContext = createContext();
 
-const Slider = () => {
-    const data = React.useContext(MyContext);
-    const getAllStartups = data.startups.map((item) => (
+const Slider = (props) => {
+
+    const getAllStartups = props.state.map((item) => (
         <StartupItem
         key={item.id}
         title={item.title}
@@ -60,4 +60,3 @@ const Slider = () => {
 }
 
 export default Slider
-export { MyContext };

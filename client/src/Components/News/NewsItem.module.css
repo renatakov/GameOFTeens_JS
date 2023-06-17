@@ -1,0 +1,26 @@
+.newsItemContainer{
+    margin: 1rem;
+    border: 2px solid #e7a5a5;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.top_title hr {
+    width: 32px;
+    height: 1.5px;
+    border: none;
+    margin: 5px;
+    background: #F59E0B;
+}
+
+.top_title h2 {
+    color: #F59E0B;
+    font-weight: 500;
+    font-size: 32px;
+}
+.newsItemContainer > button{
+    background: none;
+    border: 1px solid #1e1d1d;
+    border-radius: 4px;
+    color: #d2a556;
+}
